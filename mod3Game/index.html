@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Color Game</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/app.css">
+    <script type="text/javascript" src="app.js" defer></script>
+</head>
+
+<body id="main-body">
+    <h1>Can You
+        <br>
+        <span id="colorDisplay">RGB</span>
+        <br>
+        Guess The Color?
+    </h1>
+
+    
+        <div id="game-body">
+            <div id="stripe">
+                <button id="reset">New Colors</button>
+                <span id="message"></span>
+                <button id="easy" class="mode">Easy</button>
+                <button id="medium" class="mode">Medium</button>
+                <button id="hard" class="mode">Hard</button>
+            </div>
+
+            <div id="container">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+    
+       
+        
+
+             <!-- <iframe class="gif" id="gif" src="https://giphy.com/embed/SsxA20B6Wn8iKgE1bI" width="480" height="480" frameBorder="0" class="giphy-embed"
+                allowFullScreen SameSite=None; Secure></iframe> -->
+            
+        <!-- The Signup Modal -->
+        <div id="modal" class="modal">
+            <!-- Signup Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span id="exit" class="close">&times;</span>
+                    <h2 id="modalGreeting"></h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label id="usernameLabel" for="username"></label>
+                        <input id="usernameInput" type="text" name="username" placeholder="Username...">
+                        <br>
+                        <label id="passwordLabel" for="password"></label>
+                        <input id="passwordInput" type="password" name="password" placeholder="Password...">
+                        <button id="submit" class="btn btn--success"></button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <h3 id="modalSendOff"></h3>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- The Signup Modal -->
+        <!-- <div id="signupModal" class="modal"> -->
+            <!-- Signup Modal content -->
+            <!-- <div class="modal-content">
+                <div class="modal-header">
+                    <span id="exitSignup" class="close">&times;</span>
+                    <h2>Welcome, Let's get you started!</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="username">Please Enter A Username</label>
+                        <input id="signupUsernameInput" type="text" name="username" placeholder="Username...">
+                        <br>
+                        <label for="password">Please Enter A Password</label>
+                        <input id="signupPasswordInput" type="password" name="password" placeholder="Password...">
+                        <button id="signupSubmit" class="btn btn--success">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <h3>Good luck on your guessing!</h3>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- The Login Modal -->
+        <!-- <div id="loginModal" class="modal"> -->
+        
+            <!-- Login Modal content -->
+            <!-- <div class="modal-content">
+                <div class="modal-header">
+                    <span id="exitLogin" class="close">&times;</span>
+                    <h2>Welcome back, Let's start guessing!</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="username">Enter Your Username</label>
+                        <input id="loginUsernameInput" type="text" name="username" placeholder="Username...">
+                        <br>
+                        <label for="password">Enter Your Password</label>
+                        <input id="loginPasswordInput" type="password" name="password" placeholder="Password...">
+                        <button class="btn btn--success">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <h3>Good luck on your guessing!</h3>
+                </div>
+            </div>
+        </div> -->
+  
+
+    <button class="glow" id="signupBtn">Signup</button>
+    <button class="glow" id="loginBtn">Login</button>
+    <!-- <button id="toggle-button">Toggle</button> -->
+
+        <!-- <div id="userProfile" class="userProfile">
+            <div id="usernameDisplayDiv">
+                <p id="usernameDisplay" class="usernameDisplay">Sean Eriksen </p>
+            </div>
+            <div id="scoreDisplayDiv">
+                <p class="scoreDisplay">Scoreboard</p>
+            </div>
+            <div class="winsAndLosses">
+                <p class="winDisplay">Wins:<span id="winSpan">8</span></p>
+                <p class="lossDisplay">Losses:<span id="lossSpan">3</span></p>
+            </div>
+
+            <h5 id="editProfileBtn">Edit Profile</h5> 
+            <h5 id="deleteProfileBtn">Delete Profile</h5>
+
+        </div> -->
+
+        <!-- <div id="usersIndex" class="usersIndex">
+                    <!-- <div id="usernameDisplayDiv"> -->
+                        <!-- <ul id="usersIndexUl">
+                        <li id="usernamesDisplay" class="usernamesDisplay"></li>
+                        </ul> --> 
+                    <!-- </div> -->
+                    <!-- <div id="usersIndexDisplayBodyDiv" class="usersIndexDisplayBodyDiv">
+                        <div id="usersScoreDisplayDiv">
+                            <p class="usersScoreDisplay">Scoreboard</p>
+                        </div>
+                        <div class="winsAndLosses">
+                            <p class="usersWinDisplay">Wins:<span id="usersWinSpan"></span></p>
+                            <p class="usersLossDisplay">Losses:<span id="usersLossSpan"></span></p>
+                        </div>
+                        <h5 id="goBackBtn">Go Back</h5>  -->
+                    <!-- </div> -->
+
+        <!-- </div> -->
+
+
+        <!-- <button id="getUsersBtn">Get Users</button> -->
+
+
+</body>
+
+</html>

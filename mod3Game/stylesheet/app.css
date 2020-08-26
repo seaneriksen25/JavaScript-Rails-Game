@@ -1,0 +1,345 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+.square {
+	width: 30%;
+	background-color: purple;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 15%;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+}
+
+#container {
+	margin: 20px auto;
+	max-width: 600px;
+}
+
+h1 {
+	text-align: center;
+	line-height: 1.1;
+	font-weight: normal;
+	color: white;
+	background: steelblue;
+	margin: 0;
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+
+#colorDisplay {
+	font-size: 200%;
+}
+
+#message {
+	display: inline-block;
+	width: 20%; 
+}
+
+#stripe {
+	background: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+.selected {
+	color: white;
+	background: steelblue;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+  color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+  outline: none;
+  border-radius: 12px;
+}
+
+button:hover {
+	color: white;
+	background: steelblue;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 2px solid #888;
+  width: 30%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: steelblue;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: steelblue;
+  color: white;
+}
+
+
+/* Style the User Profile */
+.userProfile {
+  height: 35%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  left: 15px;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  border-radius: 2%; 
+}
+
+.usernameDisplay {
+    font-family: "Avenir";
+    font-weight: 700;
+    color: steelblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    overflow-wrap: break-word; 
+}
+
+.scoreDisplay {
+    font-family: "Avenir";
+    font-weight: 700;
+    color: steelblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.winDisplay {
+    font-family: "Avenir";
+    font-weight: 700;
+    color: steelblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+.lossDisplay {
+    font-family: "Avenir";
+    font-weight: 700;
+    color: maroon;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+#rulesModal {
+    margin-left: 10px;
+}
+
+#rulesModal:hover {
+    color: goldenrod;
+}
+
+#editProfileBtn {
+    margin-left: 10px;
+}
+
+#deleteProfileBtn {
+    margin-left: 10px;
+}
+
+#editProfileBtn:hover {
+    color: goldenrod;
+}
+
+#deleteProfileBtn:hover {
+    color: goldenrod;
+}
+
+#logoutBtn {
+  margin-left: 10px;
+}
+
+#logoutBtn:hover {
+  color: goldenrod;
+}
+
+.glow {
+  /* font-size: 80px; */
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0101fe, 0 0 40px #ff0101fe, 0 0 50px #faa005, 0 0 60px #f7ef06, 0 0 70px #eaf50a;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #5995fc, 0 0 40px #845bff, 0 0 50px #925bff, 0 0 60px #5be1ff, 0 0 70px #ff5bfa, 0 0 80px #c356f2;
+  }
+}
+
+
+ #signupBtn {
+  margin-left: 760px;
+  font-size: 25px;
+}
+
+ #loginBtn {
+  font-size: 25px;
+  margin-left: 760px;
+} 
+ 
+
+
+
+
+
+
+/* This is all styling in regards to other users information and rendering */
+
+/* This the other users index */
+/* .usersIndex {
+  height: 35%;
+  width: 250px;
+  position: fixed; 
+  z-index: 1; 
+  top: 10;
+  right: 15px;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  border-radius: 2%;
+  
+} */
+
+/* .usernamesDisplay {
+    font-family: "Avenir";
+    font-weight: 700;
+    color: steelblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+
+.usernamesDisplay:hover {
+  color: rgb(235, 16, 16);
+} */
+
+/* .usersScoreDisplay {
+    font-family: "Avenir";
+    font-weight: 700;
+    color: steelblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 25px;
+} */
+
+/* .usersWinDisplay {
+    font-family: "Avenir";
+    font-weight: 700;
+    color: steelblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 10px;
+} */
+
+/* .usersLossDisplay {
+    font-family: "Avenir";
+    font-weight: 700;
+    color: maroon;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+.usernamesUL {
+  list-style-type: none;
+} */
+
+/* #goBackBtn {
+  margin-left: 10px;
+}
+
+#goBackBtn:hover {
+  color: goldenrod;
+} */
